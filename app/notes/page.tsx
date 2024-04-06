@@ -4,7 +4,7 @@ import Note from "./Note";
 
 async function getNotes() {
   const res = await fetch(
-    "https://simple-notes.fly.dev/collections/notes/records?page=1&perPage=30",
+    "https://simple-notes.fly.dev/api/collections/notes/records?page=1&perPage=30",
     { cache: "no-store" }
   );
   const data = await res.json();
