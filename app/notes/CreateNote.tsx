@@ -10,7 +10,7 @@ export default function CreateNote() {
   const router = useRouter();
 
   const create = async () => {
-    await fetch("http://127.0.0.1:8090/api/collections/notes/records", {
+    await fetch("https://simple-notes.fly.dev/api/collections/notes/records", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, content }),
