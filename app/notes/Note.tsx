@@ -9,7 +9,7 @@ export default function Note({ note }: any) {
   const router = useRouter();
 
   const deleteNote = async (id: string) => {
-    await fetch(`http://127.0.0.1:8090/api/collections/notes/records/${id}`, {
+    await fetch(`https://simple-notes.fly.dev/api/collections/notes/records/${id}`, {
       method: "DELETE",
     });
     router.refresh();
